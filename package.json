@@ -1,0 +1,46 @@
+{
+  "name": "@lxgicstudios/api-contract",
+  "version": "1.0.0",
+  "description": "Validate live API responses against a contract schema. Auto-generate contracts from endpoints, then validate them on every deploy. Catch extra fields, missing fields, and type mismatches.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "api-contract": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "api",
+    "contract",
+    "schema",
+    "validation",
+    "testing",
+    "type-checking",
+    "cli",
+    "ci-cd",
+    "http",
+    "rest-api",
+    "contract-testing",
+    "response-validation",
+    "breaking-changes",
+    "npx"
+  ],
+  "author": "LXGIC Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/api-contract"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "typescript": "^5.9.3"
+  }
+}
